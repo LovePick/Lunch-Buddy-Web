@@ -25,6 +25,20 @@ npm run build
 - `src/checkout.ts` — readable checkout business rules
 - `src/checkout.test.ts` — six acceptance scenarios as automated tests
 - `src/menu.ts` — demo food data
+- `src/teaching/` — intentionally buggy checkout exercise for Copilot review
+
+## Copilot bug-hunt exercise
+
+The teaching exercise is isolated from the production app, so the normal test
+suite remains green. See `src/teaching/README.md` for the lesson flow.
+
+```bash
+# Production tests: expected to pass
+npm test
+
+# Teaching exercise: expected to fail until learners fix the bugs
+npm run test:buggy
+```
 
 ## Checkout rules
 

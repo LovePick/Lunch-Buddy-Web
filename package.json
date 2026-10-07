@@ -7,8 +7,9 @@
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
-    "test": "vitest run",
-    "test:watch": "vitest"
+    "test": "vitest run src/checkout.test.ts",
+    "test:watch": "vitest src/checkout.test.ts",
+    "test:buggy": "vitest run src/teaching/checkout.buggy.test.ts"
   },
   "dependencies": {
     "react": "^19.3.0",
